@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Seletor CSS</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>Seletores CSS</h1>
+
+   <p>Os seletores CSS são usados para "localizar" (ou selecionar) os elementos HTML que você quero estilizar.</p>
+
+   <p>Podemos dividir os seletores CSS em cinco categorias:</p>
+
+   <ul>
+      <li>Seletores simples (selecione elementos com base em nome, id, classe)</li>
+      <li><ins>Seletores de combinadores</ins> (selecione elementos baseados em uma relação específica entre eles)</li>
+      <li><ins>Seletores de pseudoclasse</ins> (selecione elementos com base em um determinado estado)</li>
+      <li><ins>Seletores de pseudoelementos</ins> (selecione e estilizar uma parte de um elemento)</li>
+      <li><ins>Seletores de atributos</ins> (selecione elementos com base em um atributo ou valor de atributo)</li>
+   </ul>
+
+   <p>Esta página explicará os seletores CSS mais básicos.</p>
+   <hr>
+
+   <h2>O seletor de elementos CSS</h2>
+
+   <p>O seletor de elemento seleciona elementos HTML com base no nome do elemento.</p>
+   
+   <p>Aqui, todos os elementos <mark>&lt;p></mark> na página serão alinhado ao centro, com uma cor de texto vermelha:</p>
+   <pre>
+   Exemplo:
+   <mark>p</mark> {
+      <mark>text-align</mark>: <strong>center;</strong>
+      <mark>color</mark>: <strong>red;</strong>
+   }
+   </pre>
+   <hr>
+
+   <h2>O seletor de ID CSS</h2>
+
+   <p>O seletor id usa o atributo id de um elemento HTML para selecionar um elemento específico.</p>
+
+   <p>O id de um elemento é exclusivo dentro de uma página, portanto, o seletor de id é usado para selecione um elemento único!</p>
+
+   <p>Para selecionar um elemento com um id específico, escreva um caractere de hash <mark>( # )</mark>, seguido por o id do elemento.</p>
+
+   <h3>Exemplo</h3>
+
+   <p>A regra CSS abaixo será aplicada ao elemento HTML com id="<mark>para1</mark>":</p>
+   <pre>
+   <mark>#para1</mark> {
+      <mark>text-align</mark>: <strong>center</strong>;
+      <mark>color</mark>: <strong>red</strong>;
+   } </pre>
+
+   <p><mark>Nota:</mark> Um nome de id não pode começar com um número! </p>
+   <hr>
+
+   <h2>O seletor de classe CSS</h2>
+
+   <p>O seletor de classe seleciona elementos HTML com um atributo de classe específico.</p>
+
+   <p>Para selecionar elementos com uma classe específica, escreva um caractere de ponto <mark>( . )</mark> seguido pelo nome da classe.</p>
+
+   <h3>Exemplo</h3>
+
+   <p>Neste exemplo, todos os elementos HTML com class="<mark>center</mark>" serão vermelhos e alinhados ao centro:</p>
+   <pre>
+   <mark>.center</mark> {
+      <mark>text-align</mark>: <strong>center</strong>;
+      <mark>color</mark>: <strong>red</strong>;
+   } </pre>
+   <hr>
+
+   <p>Você também pode especificar que somente elementos HTML específicos devem ser afetados por uma classe.</p>
+
+   <h3>Exemplo</h3>
+
+   <p>Neste exemplo, somente <mark>&lt;p></mark> elementos com class="<mark>center</mark>" serão vermelho e alinhado ao centro:</p>
+   <pre>
+   <mark>p.center</mark> {
+      <mark>text-align</mark>: <strong>center</strong>;
+      <mark>color</mark>: <strong>red</strong>;
+   } </pre>
+
+   <p>Elementos HTML também pode se referir a mais de uma classe.</p>
+   <hr>
+
+   <h3>Exemplo</h3>
+
+   <p>Neste exemplo, o elemento <mark>&lt;p></mark> será estilizado de acordo com class="<mark>center</mark>" e para class="<mark>large</mark>":</p>
+   <pre>
+   <mark>&lt;p></mark> class="<mark>center large</mark>">Este parágrafo não pode ser 
+   referência para duas classes.<mark>&lt;/p></mark></pre>
+
+   <p><mark>Nota:</mark> Um nome de classe não pode começar com um número!</p>
+   <hr>
+
+   <h2>O seletor universal CSS</h2>
+
+   <p>O seletor universal <mark>( * )</mark> seleciona todos os HTML na página.</p>
+
+   <h3>Exemplo</h3>
+
+   <p>A regra CSS abaixo afetará todos os elementos HTML na página:</p>
+   <pre>
+   <mark>*</mark> {
+      <mark>text-align</mark>: <strong>center</strong>;
+      <mark>color</mark>: <strong>blue</strong>;
+   } </pre>
+   <hr>
+
+   <h2>O seletor de agrupamento CSS</h2>
+
+   <p>O seletor de agrupamento seleciona todos os elementos HTML com o mesmo estilo Definições.</p>
+
+   <p>Observe o seguinte código CSS (os elementos h1, h2 e p têm o mesmo definições de estilo):</p>
+   <pre>
+   <mark>h1</mark> {
+      <mark>text-align</mark>: <strong>center</strong>;
+      <mark>color</mark>: <strong>red</strong>;
+   }
+   <mark>h2</mark> {
+      <mark>text-align</mark>: <strong>center</strong>;
+      <mark>color</mark>: <strong>red</strong>;
+   }
+   <mark>p</mark> {
+      <mark>text-align</mark>: <strong>center</strong>;
+      <mark>color</mark>: <strong>red</strong>;
+   } </pre>
+
+   <p>Será melhor agrupar os seletores, para minimizar o código.</p>
+   <hr>
+
+   <p>Para agrupar seletores, separe cada seletor com uma vírgula.</p>
+
+   <h3>Exemplo</h3>
+
+   <p>Neste exemplo, agrupamos os seletores do código acima:</p>
+   <pre>
+   <mark>h1, h2, p</mark> {
+      <mark>text-align</mark>: <strong>center</strong>;
+      <mark>color</mark>: <strong>red</strong>;
+   } </pre>
+   <hr>
+   
+</body>
+</html>
