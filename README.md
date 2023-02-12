@@ -5,7 +5,7 @@
 
  Se eu fizesse isso antes, ou seja, assim que comecei a estudar programação não teria de voltar para o início outra vez.
 
-Estudar requer disciplina, paciência, perceverença, prática, etc.
+Estudar requer disciplina, paciência, perseverença, prática, etc.
 
 Não acredito, se eu não consigo falar de algo que apredi, é porque não aprendi; por exemplo, PHP, se não sei falar de (variáveis, constantes, função, etc) dessa linguagem com requeza de detalhes, é sinal que não conheço PHP (linguagem de programação).
 
