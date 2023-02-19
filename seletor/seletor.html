@@ -10,12 +10,12 @@
 <body>
    <h1>Seletores CSS</h1>
 
-   <p>Os seletores CSS são usados para "localizar" (ou selecionar) os elementos HTML que você quero estilizar.</p>
+   <p>Os seletores CSS são usados para "localizar" (ou selecionar) os elementos HTML que você quer estilizar.</p>
 
    <p>Podemos dividir os seletores CSS em cinco categorias:</p>
 
    <ul>
-      <li>Seletores simples (selecione elementos com base em nome, id, classe)</li>
+      <li>Seletores simples (selecione elementos com base em <mark>nome, id, classe</mark>)</li>
       <li><ins>Seletores de combinadores</ins> (selecione elementos baseados em uma relação específica entre eles)</li>
       <li><ins>Seletores de pseudoclasse</ins> (selecione elementos com base em um determinado estado)</li>
       <li><ins>Seletores de pseudoelementos</ins> (selecione e estilizar uma parte de um elemento)</li>
@@ -35,17 +35,16 @@
    <mark>p</mark> {
       <mark>text-align</mark>: <strong>center;</strong>
       <mark>color</mark>: <strong>red;</strong>
-   }
-   </pre>
+   }</pre>
    <hr>
 
-   <h2>O seletor de ID CSS</h2>
+   <h2>O seletor de <mark>ID</mark> CSS</h2>
 
    <p>O seletor id usa o atributo id de um elemento HTML para selecionar um elemento específico.</p>
 
    <p>O id de um elemento é exclusivo dentro de uma página, portanto, o seletor de id é usado para selecione um elemento único!</p>
 
-   <p>Para selecionar um elemento com um id específico, escreva um caractere de hash <mark>( # )</mark>, seguido por o id do elemento.</p>
+   <p>Para selecionar um elemento com um id específico, escreva um caractere de hash-tag <mark>( # )</mark>, seguido por o <mark>id</mark> do elemento.</p>
 
    <h3>Exemplo</h3>
 
@@ -59,9 +58,9 @@
    <p><mark>Nota:</mark> Um nome de id não pode começar com um número! </p>
    <hr>
 
-   <h2>O seletor de classe CSS</h2>
+   <h2>O seletor de <mark>classe</mark> CSS</h2>
 
-   <p>O seletor de classe seleciona elementos HTML com um atributo de classe específico.</p>
+   <p>O seletor de <mark>classe</mark> seleciona elementos HTML com um atributo de classe específico.</p>
 
    <p>Para selecionar elementos com uma classe específica, escreva um caractere de ponto <mark>( . )</mark> seguido pelo nome da classe.</p>
 
@@ -99,7 +98,7 @@
    <p><mark>Nota:</mark> Um nome de classe não pode começar com um número!</p>
    <hr>
 
-   <h2>O seletor universal CSS</h2>
+   <h2>O seletor universal <mark>( * )</mark> CSS</h2>
 
    <p>O seletor universal <mark>( * )</mark> seleciona todos os HTML na página.</p>
 
@@ -146,6 +145,46 @@
       <mark>color</mark>: <strong>red</strong>;
    } </pre>
    <hr>
-   
+
+   <table>
+      <caption>Todos os seletores simples de CSS</caption>
+      <tr>
+         <th>Selector</th>
+         <th>Example</th>
+         <th>Example description</th>
+      </tr>
+      <tr>
+         <td>#id</td>
+         <td>#firstname</td>
+         <td>Selects the element with id="<mark>firstname</mark>"</td>
+      </tr>
+      <tr>
+         <td>.class</td>
+         <td>.intro</td>
+         <td>Selects all elements with class="<mark>intro</mark>"</td>
+      </tr>
+      <tr>
+         <td>element.class</td>
+         <td>p.intro</td>
+         <td>Selects only &lt;<b>p</b>> elements with class="<mark>intro</mark>"</td>
+      </tr>
+      <tr>
+         <td>*</td>
+         <td>*</td>
+         <td>Selects all elements</td>
+      </tr>
+      <tr>
+         <td>element</td>
+         <td>p</td>
+         <td>Selects all &lt;<b>p</b>> elements</td>
+      </tr>
+      <tr>
+         <td>element,element,..</td>
+         <td>div, p</td>
+         <td>Selects all  &lt;<b>div</b>> elements and all &lt;<b>p</b>> elements</td>
+      </tr>
+   </table> 
+   <hr>
+
 </body>
 </html>
