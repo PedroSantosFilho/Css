@@ -1,6 +1,3 @@
-# Css
- Resumo do curso de Css, praticando Html.
- 
  Estou utilizando o site da W3SHCOOLS com modelo, pois é um resumo da maioria dos livros que li sobre os assuntos (Html, Css, JavaScript, Php).
 
  Se eu fizesse isso antes, ou seja, assim que comecei a estudar programação não teria de voltar para o início outra vez.
