@@ -1,0 +1,22 @@
+p.one {
+   border-style: solid;
+   border-color: red; /* verelho */
+ }
+ 
+ p.two {
+   border-style: solid;
+   border-color: green; /* verde */
+ } 
+ 
+ p.three {
+   border-style: dotted;
+   border-color: blue; /* azul */
+ } 
+ 
+p.um {
+    padding: 10px; /* espaços */
+    border-width: 10px; /* largura 10 px */
+    border-style: solid; /* estilo sólido */
+    border-color: red green blue yellow; /* topo vermelho, direito verde, fundo azul e esquerdo amarelo */
+ }
+ 
