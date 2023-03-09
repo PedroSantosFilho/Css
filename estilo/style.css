@@ -65,7 +65,7 @@
       border: 1px solid black;
       padding: 5px;
    }
-   th.opera, td.opera {
+   th, td {
       text-align: center;
    }
    form {
